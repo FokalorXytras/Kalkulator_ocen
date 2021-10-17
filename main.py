@@ -1,3 +1,5 @@
+# -*- utf-8 -*-
+
 import PySimpleGUI as Sg
 from mark import mark
 from layout import *
@@ -8,9 +10,9 @@ while True:
         break
     if event == "Oblicz":
         pkt = values["-ZDOBYTE-"]
-        pkt = pkt.replace(',', '.')
+        pkt = pkt.replace(', ', '.')
         cale = values["-CALOSC-"]
-        cale = cale.replace(',', '.')
+        cale = cale.replace(', ', '.')
         try:
             b = (float(pkt) / float(cale)) * 100
             c = mark(float(cale), float(pkt))
