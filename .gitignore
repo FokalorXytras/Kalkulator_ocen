@@ -3,6 +3,7 @@ logs/
 __pycache__/
 build/
 .idea/
+.icon/
 *.png
 *.ico
 2.py

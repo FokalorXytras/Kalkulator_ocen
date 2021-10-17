@@ -56,5 +56,4 @@ layout = [
         Sg.Column(prawadwa, background_color="lightgray"),
     ]
 ]
-window = Sg.Window("Kalkulator Ocen", layout, background_color="lightgray", icon=".\\icon"
-                                                                                 "\\calc.ico")
+window = Sg.Window("Kalkulator Ocen", layout, background_color="lightgray")
