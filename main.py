@@ -10,14 +10,14 @@ while True:
         break
     if event == "Oblicz":
         pkt = values["-ZDOBYTE-"]
-        pkt = pkt.replace(', ', '.')
+        pkt = pkt.replace(",", ".")
         cale = values["-CALOSC-"]
-        cale = cale.replace(', ', '.')
+        cale = cale.replace(",", ".")
         try:
-            b = (float(pkt) / float(cale)) * 100
-            c = mark(float(cale), float(pkt))
-            window["procent"].update('{:.2f}%'.format(b))
-            window["ocena"].update(c)
+            i = (float(pkt) / float(cale)) * 100
+            j = mark(float(cale), float(pkt))
+            window["procent"].update('{:.2f}%'.format(i))
+            window["ocena"].update(j)
             window["-ZDOBYTE-"].update("")
         except ValueError:
             window["-ZDOBYTE-"].update("")
