@@ -2,6 +2,7 @@ logs/
 *.spec
 __pycache__/
 build/
+dist/
 .idea/
 .icon/
 *.png

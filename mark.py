@@ -1,38 +1,39 @@
 def mark(i, j):
-    k = (i/j)*100
+    k = (j/i)*100
+    k = round(k, 2)
 
-    if k >= 90.50:
-        if k >= 97.75:
+    if 90.50 <= k <= 100:
+        if 97.75 <= k:
             a = "5+"
-        elif k <= 93.25:
+        elif 93.25 <= k:
             a = "5-"
         else:
             a = "5"
-    elif k >= 75.50:
-        if k >= 86.5:
+    elif 75.50 <= k <= 90.49:
+        if 86.5 <= k:
             a = "4+"
-        elif k <= 79.5:
+        elif 79.5 <= k:
             a = "4-"
         else:
             a = "4"
-    elif k >= 60.50:
-        if k >= 71.5:
+    elif 60.50 <= k <= 75.49:
+        if 71.5 <= k:
             a = "3+"
-        elif k <= 63.5:
+        elif 63.5 <= k:
             a = "3-"
         else:
             a = "3"
-    elif k >= 50.50:
-        if k >= 57.75:
+    elif 50.50 <= k <= 60.49:
+        if 57.75 <= k:
             a = "2+"
-        elif k <= 53.25:
+        elif 53.25 <= k:
             a = "2-"
         else:
             a = "2"
-    elif k >= 0:
-        if k >= 37.5:
+    elif 0 <= k <= 50.49:
+        if 37.5 <= k:
             a = "1+"
-        elif k <= 12.5:
+        elif 12.5 <= k:
             a = "1-"
         else:
             a = "1"
